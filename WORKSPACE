@@ -368,6 +368,24 @@ http_archive(
     urls = ["https://download.visualstudio.microsoft.com/download/pr/f01e3d97-c1c3-4635-bc77-0c893be36820/6ec6acabc22468c6cc68b61625b14a7d/dotnet-sdk-3.1.402-linux-x64.tar.gz"],
 )
 
+# for dotnet 5
+http_archive(
+    name = "dotnet_5_sdk",
+    build_file = "//experimental/dotnet:BUILD.dotnet",
+    sha256 = "0a7dc69528f09d6ccd49bbdbe5ce0e61a3d0becf44146467087f835b9d11928b",
+    type = "tar.gz",
+    urls = ["https://download.visualstudio.microsoft.com/download/pr/13b9d84c-a35b-4ffe-8f62-447a01403d64/1f9ae31daa0f7d98513e7551246899f2/dotnet-sdk-5.0.400-linux-x64.tar.gz"],
+)
+
+http_archive(
+    name = "dotnet_5_runtime",
+    build_file = "//experimental/dotnet:BUILD.dotnet",
+    sha256 = "ca143ca29035ebd6acc2b7033d7cdd2b9ceb9e34465ecdb4a7947b92173772ec",
+    type = "tar.gz",
+    urls = ["https://download.visualstudio.microsoft.com/download/pr/0c1eabe6-32ef-4785-92d1-8f09a0951b9e/d90c850374a07505bd577d3cff5d7536/dotnet-runtime-5.0.9-linux-x64.tar.gz"],
+)
+
+
 # For the debug image
 http_file(
     name = "busybox",
