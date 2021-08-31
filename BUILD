@@ -106,6 +106,12 @@ container_bundle(
         "gcr.io/{PROJECT_ID}/dotnet/core/sdk:latest": "//experimental/dotnet:dotnet_core_sdk_debian9",
         "gcr.io/{PROJECT_ID}/dotnet/core/sdk:3.1": "//experimental/dotnet:dotnet_core_sdk_debian9",
         "gcr.io/{PROJECT_ID}/dotnet/core/sdk:debug": "//experimental/dotnet:dotnet_core_sdk_debug_debian9",
+        "gcr.io/{PROJECT_ID}/dotnet/5/sdk:5.0": "//experimental/dotnet:dotnet_5_sdk_debian9",
+        "gcr.io/{PROJECT_ID}/dotnet/5/sdk:debug": "//experimental/dotnet:dotnet_5_sdk_debug_debian9",
+        "gcr.io/{PROJECT_ID}/dotnet/5/runtime:5.0": "//experimental/dotnet:dotnet_5_runtime_debian9",
+        "gcr.io/{PROJECT_ID}/dotnet/5/runtime:debug": "//experimental/dotnet:dotnet_5_runtime_debug_debian9",
+        "gcr.io/{PROJECT_ID}/dotnet/5/runtime-debian10:5.0": "//experimental/dotnet:dotnet_5_runtime_debian10",
+        "gcr.io/{PROJECT_ID}/dotnet/5/runtime-debian10:debug": "//experimental/dotnet:dotnet_5_runtime_debug_debian10"
     },
 )
 
